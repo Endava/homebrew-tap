@@ -4,8 +4,8 @@
 class Cats < Formula
   desc "CATS is a REST APIs fuzzer and negative testing tool for OpenAPI endpoints. CATS automatically  generates, runs and reports tests with minimum configuration and no coding effort. Tests are self-healing and do not require maintenance."
   homepage ""
-  url "https://github.com/Endava/cats/releases/download/cats-8.1.0/cats_macos_amd64_8.1.0.tar.gz"
-  sha256 "fe843629626c4e4f05ad2e09b9c5a41e2a968a2caf6d5b1bfc0a17a3c21c7b1c"
+  url "https://github.com/Endava/cats/releases/download/cats-8.2.0/cats_macos_amd64_8.2.0.tar.gz"
+  sha256 "ec7f9216a474b2480f5fb546b2c2f8fdf6f7a826a9c0bb99926b1d59c7ceca99"
   license "Apache-2.0"
 
   # depends_on "cmake" => :build
