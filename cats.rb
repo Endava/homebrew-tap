@@ -3,9 +3,23 @@
 # PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
 class Cats < Formula
   desc "CATS is a REST APIs fuzzer and negative testing tool for OpenAPI endpoints. CATS automatically  generates, runs and reports tests with minimum configuration and no coding effort. Tests are self-healing and do not require maintenance."
-  homepage ""
-  url "https://github.com/Endava/cats/releases/download/cats-9.0.1/cats_macos_amd64_9.0.1.tar.gz"
-  sha256 "43b3d08ec3d1e42cd05062d7eee543858cdfcc662d9534c58119980d2e142485"
+  homepage "https://endava.github.io/cats/"
+
+  if OS.mac?
+      if Hardware::CPU.intel?
+        url "https://github.com/Endava/cats/releases/download/cats-9.0.2/cats_macos_amd64_9.0.2.tar.gz"
+        sha256 "8fadd4a65b0be907ac6ec22d8cc9514b66db58e6d6295c1df14b26bd7429502d"
+      elsif Hardware::CPU.arm?
+        url "https://github.com/Endava/cats/releases/download/cats-9.0.2/cats_macos_arm64_9.0.2.tar.gz"
+        sha256 "1e830fa28b8717e78da11dd0400cb7be4e007b2a27dea67e594444bedea2f16e"
+      end
+  elsif OS.linux?
+    url "https://github.com/Endava/cats/releases/download/cats-9.0.2/cats_linux_amd64_9.0.2.tar.gz"
+    sha256 "7a553ce0761e65c73042828efd38771e24f0d52a7a70fb17ee8e3a924317c7c7"
+  else
+    odie "Please use the uberjar version: https://github.com/Endava/cats/releases/download/cats-9.0.2/cats_uberjar_9.0.2.tar.gz"
+  end
+
   license "Apache-2.0"
 
   # depends_on "cmake" => :build
