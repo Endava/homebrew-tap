@@ -8,7 +8,7 @@ class Cats < Formula
   if OS.mac?
       if Hardware::CPU.intel?
         url "https://github.com/Endava/cats/releases/download/cats-10.2.0/cats_macos_amd64_10.2.0.tar.gz"
-        sha256 ""
+        sha256 "fe5e25e2226f43086b5e0ab1cff2c47b7254f7b2fb6747cade0d73c4d3738065"
       elsif Hardware::CPU.arm?
         url "https://github.com/Endava/cats/releases/download/cats-10.2.0/cats_macos_arm64_10.2.0.tar.gz"
         sha256 "8c33eb7887d29758099478f113c6e8e3ba5655c6856de59a2a254fbe473f7cb6"
