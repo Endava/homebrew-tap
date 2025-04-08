@@ -7,22 +7,22 @@ class Cats < Formula
 
   if OS.mac?
       if Hardware::CPU.intel?
-        url "https://github.com/Endava/cats/releases/download/cats-13.1.1/cats_macos_amd64_13.1.1.tar.gz"
-        sha256 "efeabe85c5e5428e1f90b764fd95bc4884bd90f44e009c0964bbab4ee88350a9"
+        url "https://github.com/Endava/cats/releases/download/cats-13.1.2/cats_macos_amd64_13.1.2.tar.gz"
+        sha256 "f36332a99d4ee609e0fcb836ed6a1ab3a9548d5a1ac1fc0e2cdda2e47a4d76a2"
       elsif Hardware::CPU.arm?
-        url "https://github.com/Endava/cats/releases/download/cats-13.1.1/cats_macos_arm64_13.1.1.tar.gz"
-        sha256 "be2f32808b343ea2764ccd3ab286a6ac629b3aaa96fc245e70d1a9a2197273c9"
+        url "https://github.com/Endava/cats/releases/download/cats-13.1.2/cats_macos_arm64_13.1.2.tar.gz"
+        sha256 "6820e79500570685b06ef966ef82e7d1fb721fab22bf52ad329c38b54b4bc966"
       end
   elsif OS.linux?
       if Hardware::CPU.intel?
-        url "https://github.com/Endava/cats/releases/download/cats-13.1.1/cats_linux_amd64_13.1.1.tar.gz"
-        sha256 "ec50595339467226511360c6be05fce9b825707114895d54d46d2940ebaa5512"
+        url "https://github.com/Endava/cats/releases/download/cats-13.1.2/cats_linux_amd64_13.1.2.tar.gz"
+        sha256 "b9fe6a9f8d014491ee4bcb7a7552657786eae85e4762049f002c039241d87d45"
       elsif Hardware::CPU.arm?
-        url "https://github.com/Endava/cats/releases/download/cats-13.1.1/cats_linux_arm64_13.1.1.tar.gz"
-        sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
+        url "https://github.com/Endava/cats/releases/download/cats-13.1.2/cats_linux_arm64_13.1.2.tar.gz"
+        sha256 "a790a290549cbbe2a8e3e8ccb2d994598ff51bd6d2ebfba196921d12a452c612"
       end
   else
-    odie "Please use the uberjar version: https://github.com/Endava/cats/releases/download/cats-13.1.1/cats_uberjar_13.1.1.tar.gz"
+    odie "Please use the uberjar version: https://github.com/Endava/cats/releases/download/cats-13.1.2/cats_uberjar_13.1.2.tar.gz"
   end
 
   license "Apache-2.0"
