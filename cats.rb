@@ -7,22 +7,22 @@ class Cats < Formula
 
   if OS.mac?
       if Hardware::CPU.intel?
-        url "https://github.com/Endava/cats/releases/download/cats-13.4.4/cats_macos_amd64_13.4.4.tar.gz"
-        sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
+        url "https://github.com/Endava/cats/releases/download/cats-13.4.5/cats_macos-15_amd64_13.4.5.tar.gz"
+        sha256 "d0ed2040690ceb5acd7c549c41849d3b05a726ac5bcf8165ed897c6affab748f"
       elsif Hardware::CPU.arm?
-        url "https://github.com/Endava/cats/releases/download/cats-13.4.4/cats_macos_arm64_13.4.4.tar.gz"
-        sha256 "29aab6fef8f5b0cbc71af6b8eb3ca5605ccd9b8f9c4913ebb08005ebc28f15e3"
+        url "https://github.com/Endava/cats/releases/download/cats-13.4.5/cats_macos_arm64_13.4.5.tar.gz"
+        sha256 "dda70e35cba5226bb0bfdbce1bf708163507110c45b9da555816dc50a10cabf8"
       end
   elsif OS.linux?
       if Hardware::CPU.intel?
-        url "https://github.com/Endava/cats/releases/download/cats-13.4.4/cats_linux_amd64_13.4.4.tar.gz"
-        sha256 "221de07effdedf601f20983414cd3ad4e6928e109ff22d17cd6ef4ff4704aee3"
+        url "https://github.com/Endava/cats/releases/download/cats-13.4.5/cats_linux_amd64_13.4.5.tar.gz"
+        sha256 "a080502ce43aafe6992faa578ad934dc28d029dcef0461a9c3b92fa7090069f2"
       elsif Hardware::CPU.arm?
-        url "https://github.com/Endava/cats/releases/download/cats-13.4.4/cats_linux_arm64_13.4.4.tar.gz"
-        sha256 "f99b9b4661b37a15d77c2103c0a850028bdcc93f0f77a964c5459e6cb1e6056e"
+        url "https://github.com/Endava/cats/releases/download/cats-13.4.5/cats_linux_arm64_13.4.5.tar.gz"
+        sha256 "482dd9f7879cb5618dc74943dc2b38853ee9fff559a5d7e8302c5d74f61d7f57"
       end
   else
-    odie "Please use the uberjar version: https://github.com/Endava/cats/releases/download/cats-13.4.4/cats_uberjar_13.4.4.tar.gz"
+    odie "Please use the uberjar version: https://github.com/Endava/cats/releases/download/cats-13.4.5/cats_uberjar_13.4.5.tar.gz"
   end
 
   license "Apache-2.0"
