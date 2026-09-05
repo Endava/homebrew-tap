@@ -7,22 +7,22 @@ class Cats < Formula
 
   if OS.mac?
       if Hardware::CPU.intel?
-        url "https://github.com/Endava/cats/releases/download/cats-13.8.0/cats_macos-15_amd64_13.8.0.tar.gz"
-        sha256 "2edfae8a609b63571a13167a1e95ad4675b25084cf9d3d43162cc52268775cb9"
+        url "https://github.com/Endava/cats/releases/download/cats-14.0.0/cats_macos-15_amd64_14.0.0.tar.gz"
+        sha256 "44de442d123f2bfa421b5cf78e5fa529d3fe6b8756d15b7cd2a9ab4953a95b2d"
       elsif Hardware::CPU.arm?
-        url "https://github.com/Endava/cats/releases/download/cats-13.8.0/cats_macos_arm64_13.8.0.tar.gz"
-        sha256 "04be2d6a06e04acb7ef65065bdf2b65780d12bab0a9ddae4db7ff5d4b038af1d"
+        url "https://github.com/Endava/cats/releases/download/cats-14.0.0/cats_macos_arm64_14.0.0.tar.gz"
+        sha256 "89f5ac4b179ec8b760c26e9293cdb5f403acda8152618be81a4d54289653b788"
       end
   elsif OS.linux?
       if Hardware::CPU.intel?
-        url "https://github.com/Endava/cats/releases/download/cats-13.8.0/cats_linux_amd64_13.8.0.tar.gz"
-        sha256 "e418e72254b163b4edf673ce4c6379e00c6a9d686f81dcdb852facf00f3ff1e3"
+        url "https://github.com/Endava/cats/releases/download/cats-14.0.0/cats_linux_amd64_14.0.0.tar.gz"
+        sha256 "5910efdaeaa0e5ea486c54722a7a6abbed38e2bd673a803d7726c65c173af040"
       elsif Hardware::CPU.arm?
-        url "https://github.com/Endava/cats/releases/download/cats-13.8.0/cats_linux_arm64_13.8.0.tar.gz"
-        sha256 "78c80a24614e17d220f072706eacadddd5cf6734dd47660d82b4de754313706b"
+        url "https://github.com/Endava/cats/releases/download/cats-14.0.0/cats_linux_arm64_14.0.0.tar.gz"
+        sha256 "73480a78da8c465351793a7f0d309d9ebadbe8bfb7c32a355d53df45d940771d"
       end
   else
-    odie "Please use the uberjar version: https://github.com/Endava/cats/releases/download/cats-13.8.0/cats_uberjar_13.8.0.tar.gz"
+    odie "Please use the uberjar version: https://github.com/Endava/cats/releases/download/cats-14.0.0/cats_uberjar_14.0.0.tar.gz"
   end
 
   license "Apache-2.0"
